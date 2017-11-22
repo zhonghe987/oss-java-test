@@ -1,0 +1,12 @@
+com/yovole/s3/admin/Policy.class
+com/yovole/s3/admin/S3Objects.class
+com/yovole/s3/App.class
+com/yovole/s3/admin/User.class
+com/yovole/s3/admin/Caps.class
+com/yovole/s3/OpsBucket.class
+com/yovole/s3/OpsObject.class
+com/yovole/s3/admin/Key.class
+com/yovole/s3/admin/Quota.class
+com/yovole/s3/admin/Buckets.class
+com/yovole/s3/common/CephAdminAPI.class
+com/yovole/s3/admin/Usage.class

@@ -1,0 +1,870 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mBuilding yovoleOss 0.1[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-clean-plugin:2.5:clean[m [1m(default-clean)[m @ [36myovoleOss[0;1m ---[m
+[[1;34mINFO[m] Deleting /root/yovoleOss/target
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36myovoleOss[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:compile[m [1m(default-compile)[m @ [36myovoleOss[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 12 source files to /root/yovoleOss/target/classes
+[[1;33mWARNING[m] /root/yovoleOss/src/main/java/com/yovole/s3/admin/Usage.java: Some input files use unchecked or unsafe operations.
+[[1;33mWARNING[m] /root/yovoleOss/src/main/java/com/yovole/s3/admin/Usage.java: Recompile with -Xlint:unchecked for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36myovoleOss[0;1m ---[m
+[[1;33mWARNING[m] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.1:testCompile[m [1m(default-testCompile)[m @ [36myovoleOss[0;1m ---[m
+[[1;34mINFO[m] Changes detected - recompiling the module!
+[[1;33mWARNING[m] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[[1;34mINFO[m] Compiling 1 source file to /root/yovoleOss/target/test-classes
+[[1;33mWARNING[m] /root/yovoleOss/src/test/java/com/yovole/s3/AppTest.java: /root/yovoleOss/src/test/java/com/yovole/s3/AppTest.java uses or overrides a deprecated API.
+[[1;33mWARNING[m] /root/yovoleOss/src/test/java/com/yovole/s3/AppTest.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36myovoleOss[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /root/yovoleOss/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.yovole.s3.AppTest
+get usage with uid Input: s3cmd-user
+200
+
+Response Content is: {"entries":[{"user":"s3cmd-user","buckets":[{"bucket":"","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"list_buckets","bytes_sent":319,"bytes_received":0,"ops":1,"successful_ops":1}]},{"bucket":"-","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"stat_bucket","bytes_sent":0,"bytes_received":0,"ops":30,"successful_ops":0}]},{"bucket":"remove-bucket","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"copy_obj","bytes_sent":183,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"get_obj","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":2208,"ops":1,"successful_ops":1}]},{"bucket":"remove-bucket-1","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":10,"successful_ops":10},{"category":"list_bucket","bytes_sent":4448,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"put_obj","bytes_sent":0,"bytes_received":9650,"ops":10,"successful_ops":10},{"category":"set_bucket_versioning","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2}]},{"bucket":"remove-bucket-2","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"copy_obj","bytes_sent":183,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":9,"successful_ops":9},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":9,"successful_ops":9},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":9,"successful_ops":9},{"category":"get_acls","bytes_sent":840,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"get_obj","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"init_multipart","bytes_sent":251,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_acls","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":6755,"ops":8,"successful_ops":8}]},{"bucket":"remove-bucket-3","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"get_obj","bytes_sent":965,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":2895,"ops":3,"successful_ops":3}]},{"bucket":"test-bucket-1","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":8,"successful_ops":8},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":4,"successful_ops":4},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"put_acls","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":4138,"ops":3,"successful_ops":3}]},{"bucket":"test-bucket-2","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"abort_multipart","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":10,"successful_ops":10},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":10,"successful_ops":10},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":20,"successful_ops":20},{"category":"get_acls","bytes_sent":455,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"get_bucket_location","bytes_sent":133,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"init_multipart","bytes_sent":252,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"list_bucket","bytes_sent":6082,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"list_bucket_multiparts","bytes_sent":681,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_acls","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":31730,"ops":20,"successful_ops":20},{"category":"set_bucket_versioning","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2}]}]}],"summary":[{"user":"s3cmd-user","categories":[{"category":"abort_multipart","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"copy_obj","bytes_sent":366,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":34,"successful_ops":34},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":30,"successful_ops":30},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":46,"successful_ops":46},{"category":"get_acls","bytes_sent":1295,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"get_bucket_location","bytes_sent":133,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"get_obj","bytes_sent":965,"bytes_received":0,"ops":4,"successful_ops":4},{"category":"init_multipart","bytes_sent":503,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"list_bucket","bytes_sent":10530,"bytes_received":0,"ops":4,"successful_ops":4},{"category":"list_bucket_multiparts","bytes_sent":681,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"list_buckets","bytes_sent":319,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_acls","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"put_obj","bytes_sent":0,"bytes_received":57376,"ops":45,"successful_ops":45},{"category":"set_bucket_versioning","bytes_sent":0,"bytes_received":0,"ops":4,"successful_ops":4},{"category":"stat_bucket","bytes_sent":0,"bytes_received":0,"ops":30,"successful_ops":0}],"total":{"bytes_sent":14792,"bytes_received":57376,"ops":210,"successful_ops":180}}]}
+
+get usage with date Input: 2017-09-08 2017-11-11
+200
+
+Response Content is: {"entries":[{"user":"s3cmd-user","buckets":[{"bucket":"","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"list_buckets","bytes_sent":319,"bytes_received":0,"ops":1,"successful_ops":1}]},{"bucket":"-","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"stat_bucket","bytes_sent":0,"bytes_received":0,"ops":30,"successful_ops":0}]},{"bucket":"remove-bucket","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"copy_obj","bytes_sent":183,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"get_obj","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":2208,"ops":1,"successful_ops":1}]},{"bucket":"remove-bucket-1","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":10,"successful_ops":10},{"category":"list_bucket","bytes_sent":4448,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"put_obj","bytes_sent":0,"bytes_received":9650,"ops":10,"successful_ops":10},{"category":"set_bucket_versioning","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2}]},{"bucket":"remove-bucket-2","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"copy_obj","bytes_sent":183,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":9,"successful_ops":9},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":9,"successful_ops":9},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":9,"successful_ops":9},{"category":"get_acls","bytes_sent":840,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"get_obj","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"init_multipart","bytes_sent":251,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_acls","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":6755,"ops":8,"successful_ops":8}]},{"bucket":"remove-bucket-3","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"get_obj","bytes_sent":965,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":2895,"ops":3,"successful_ops":3}]},{"bucket":"test-bucket-1","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":8,"successful_ops":8},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":4,"successful_ops":4},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"put_acls","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":4138,"ops":3,"successful_ops":3}]},{"bucket":"test-bucket-2","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"abort_multipart","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":10,"successful_ops":10},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":10,"successful_ops":10},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":20,"successful_ops":20},{"category":"get_acls","bytes_sent":455,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"get_bucket_location","bytes_sent":133,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"init_multipart","bytes_sent":252,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"list_bucket","bytes_sent":6082,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"list_bucket_multiparts","bytes_sent":681,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_acls","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":31730,"ops":20,"successful_ops":20},{"category":"set_bucket_versioning","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2}]}]},{"user":"test-2","buckets":[{"bucket":"az-bucket-4","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"test-2","categories":[{"category":"put_obj","bytes_sent":0,"bytes_received":1564475392,"ops":746,"successful_ops":746}]}]}],"summary":[{"user":"s3cmd-user","categories":[{"category":"abort_multipart","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"copy_obj","bytes_sent":366,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":34,"successful_ops":34},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":30,"successful_ops":30},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":46,"successful_ops":46},{"category":"get_acls","bytes_sent":1295,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"get_bucket_location","bytes_sent":133,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"get_obj","bytes_sent":965,"bytes_received":0,"ops":4,"successful_ops":4},{"category":"init_multipart","bytes_sent":503,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"list_bucket","bytes_sent":10530,"bytes_received":0,"ops":4,"successful_ops":4},{"category":"list_bucket_multiparts","bytes_sent":681,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"list_buckets","bytes_sent":319,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_acls","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"put_obj","bytes_sent":0,"bytes_received":57376,"ops":45,"successful_ops":45},{"category":"set_bucket_versioning","bytes_sent":0,"bytes_received":0,"ops":4,"successful_ops":4},{"category":"stat_bucket","bytes_sent":0,"bytes_received":0,"ops":30,"successful_ops":0}],"total":{"bytes_sent":14792,"bytes_received":57376,"ops":210,"successful_ops":180}},{"user":"test-2","categories":[{"category":"put_obj","bytes_sent":0,"bytes_received":1564475392,"ops":746,"successful_ops":746}],"total":{"bytes_sent":0,"bytes_received":1564475392,"ops":746,"successful_ops":746}}]}
+
+DELETE /{admin}/usage Input: 2017-09-08 2017-11-11
+200
+
+Response Content is: 
+
+DELETE /{admin}/usage Input: s3cmd-user
+200
+
+Response Content is: 
+
+DELETE /{admin}/usage
+200
+
+Response Content is: 
+
+test-1	2017-11-09T02:42:47.742Z
+PUT /{bucket} Input: test-bucket-2
+S3Bucket [name=test-bucket-2, creationDate=null, owner=null]
+DELETE /{bucket}  Input: test-bucket-2
+the bucket is delete
+PUT /{bucket} Input: test-bucket-2 public-read
+S3Bucket [name=test-bucket-2, creationDate=null, owner=null]
+
+DELETE /{bucket}  Input: test-bucket-2
+the bucket is delete
+PUT /{bucket} Input: test-bucket-2
+S3Bucket [name=test-bucket-2, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: test-bucket-2 obj_0 ../yovoleOss/pom.xml private
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 obj_1 ../yovoleOss/pom.xml private
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 obj_2 ../yovoleOss/pom.xml private
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 obj_3 ../yovoleOss/pom.xml private
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 obj_4 ../yovoleOss/pom.xml private
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 obj_5 ../yovoleOss/pom.xml private
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 obj_6 ../yovoleOss/pom.xml private
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 obj_7 ../yovoleOss/pom.xml private
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 obj_8 ../yovoleOss/pom.xml private
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 obj_9 ../yovoleOss/pom.xml private
+The object upload successful.
+
+GET /{bucket}?max-keys= Input: test-bucket-2 10
+object: obj_0
+
+object: obj_1
+
+object: obj_2
+
+object: obj_3
+
+object: obj_4
+
+object: obj_5
+
+object: obj_6
+
+object: obj_7
+
+object: obj_8
+
+object: obj_9
+
+DELETE /{bucket}/{object} Input: test-bucket-2 obj_0
+DELETE /{bucket}/{object} Input: test-bucket-2 obj_1
+DELETE /{bucket}/{object} Input: test-bucket-2 obj_2
+DELETE /{bucket}/{object} Input: test-bucket-2 obj_3
+DELETE /{bucket}/{object} Input: test-bucket-2 obj_4
+DELETE /{bucket}/{object} Input: test-bucket-2 obj_5
+DELETE /{bucket}/{object} Input: test-bucket-2 obj_6
+DELETE /{bucket}/{object} Input: test-bucket-2 obj_7
+DELETE /{bucket}/{object} Input: test-bucket-2 obj_8
+DELETE /{bucket}/{object} Input: test-bucket-2 obj_9
+DELETE /{bucket}  Input: test-bucket-2
+the bucket is delete
+PUT /{bucket} Input: test-bucket-2
+S3Bucket [name=test-bucket-2, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: test-bucket-2 test_0 ../yovoleOss/READ.md public-read
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 test_1 ../yovoleOss/READ.md public-read
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 test_2 ../yovoleOss/READ.md public-read
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 test_3 ../yovoleOss/READ.md public-read
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 test_4 ../yovoleOss/READ.md public-read
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 test_5 ../yovoleOss/READ.md public-read
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 test_6 ../yovoleOss/READ.md public-read
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 test_7 ../yovoleOss/READ.md public-read
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 test_8 ../yovoleOss/READ.md public-read
+The object upload successful.
+
+PUT /{bucket}/{object} Input: test-bucket-2 test_9 ../yovoleOss/READ.md public-read
+The object upload successful.
+
+GET /{bucket}?prefix= Input: test-bucket-2 test
+object: test_0
+object: test_1
+object: test_2
+object: test_3
+object: test_4
+object: test_5
+object: test_6
+object: test_7
+object: test_8
+object: test_9
+
+
+DELETE /{bucket}/{object} Input: test-bucket-2 test_0
+DELETE /{bucket}/{object} Input: test-bucket-2 test_1
+DELETE /{bucket}/{object} Input: test-bucket-2 test_2
+DELETE /{bucket}/{object} Input: test-bucket-2 test_3
+DELETE /{bucket}/{object} Input: test-bucket-2 test_4
+DELETE /{bucket}/{object} Input: test-bucket-2 test_5
+DELETE /{bucket}/{object} Input: test-bucket-2 test_6
+DELETE /{bucket}/{object} Input: test-bucket-2 test_7
+DELETE /{bucket}/{object} Input: test-bucket-2 test_8
+DELETE /{bucket}/{object} Input: test-bucket-2 test_9
+DELETE /{bucket}  Input: test-bucket-2
+the bucket is delete
+PUT /{bucket} Input: test-bucket-2
+S3Bucket [name=test-bucket-2, creationDate=null, owner=null]
+GET /{bucket}?location Input: test-bucket-2
+location: east-1
+
+DELETE /{bucket}  Input: test-bucket-2
+the bucket is delete
+PUT /{bucket} Input: test-bucket-2
+S3Bucket [name=test-bucket-2, creationDate=null, owner=null]
+GET /{bucket}?acl Input: test-bucket-2
+AccessControlList [owner=S3Owner [name=oss s3cmd user ,id=s3cmd-user], grants=[Grant [grantee=com.amazonaws.services.s3.model.CanonicalGrantee@a6112e9e, permission=FULL_CONTROL]]]
+
+DELETE /{bucket}  Input: test-bucket-2
+the bucket is delete
+PUT /{bucket} Input: test-bucket-2
+S3Bucket [name=test-bucket-2, creationDate=null, owner=null]
+PUT /{bucket}?acl Input: test-bucket-2 public-read-write
+DELETE /{bucket}  Input: test-bucket-2
+the bucket is delete
+PUT /{bucket} Input: test-bucket-2
+S3Bucket [name=test-bucket-2, creationDate=null, owner=null]
+POST /{bucket}/{object}?uploads Input: test-bucket-2 bigObjet
+PUT /{bucket}/{object}?partNumber=&uploadId= Input: test-bucket-2 bigObjet 2~OJYN4GEMYYDQfwoj2wIDPRq4pjrxSnx
+GET /{bucket}?uploads Input: test-bucket-2
+uploadId: 2~OJYN4GEMYYDQfwoj2wIDPRq4pjrxSnx key: bigObjet
+
+
+DELETE /{bucket}/{object}?uploadId= 
+DELETE /{bucket}  Input: test-bucket-2
+the bucket is delete
+PUT /{bucket} Input: test-bucket-2
+S3Bucket [name=test-bucket-2, creationDate=null, owner=null]
+PUT  /{bucket}?versioning Input: test-bucket-2
+DELETE /{bucket}  Input: test-bucket-2
+the bucket is delete
+PUT /{bucket} Input: test-bucket-2
+S3Bucket [name=test-bucket-2, creationDate=null, owner=null]
+PUT  /{bucket}?versioning Input: test-bucket-2
+DELETE /{bucket}  Input: test-bucket-2
+the bucket is delete
+PUT /{bucket} Input: remove-bucket
+S3Bucket [name=remove-bucket, creationDate=null, owner=null]
+DELETE /{bucket}  Input: remove-bucket
+the bucket is delete
+PUT /{bucket} Input: remove-bucket
+S3Bucket [name=remove-bucket, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: remove-bucket getUrl.py ../yovoleOss/pom.xml private
+The object upload successful.
+
+check object exist Input: remove-bucket getUrl.py
+The object is exist.
+DELETE /{bucket}/{object} Input: remove-bucket getUrl.py
+DELETE /{bucket}  Input: remove-bucket
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-2
+S3Bucket [name=remove-bucket-2, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: remove-bucket-2 getUrl.py ../yovoleOss/READ.md public-read
+The object upload successful.
+
+DELETE /{bucket}/{object} Input: remove-bucket-2 getUrl.py
+DELETE /{bucket}  Input: remove-bucket-2
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-3
+S3Bucket [name=remove-bucket-3, creationDate=null, owner=null]
+PUT /{bucket} Input: remove-bucket
+S3Bucket [name=remove-bucket, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: remove-bucket-3 getUrl.py ../yovoleOss/READ.md public-read-write
+The object upload successful.
+
+PUT /{dest-bucket}/{dest-object} Input: remove-bucket-3 getUrl.py remove-bucket newgetUrl.py
+copy successful
+
+DELETE /{bucket}/{object} Input: remove-bucket-3 getUrl.py
+DELETE /{bucket}/{object} Input: remove-bucket newgetUrl.py
+DELETE /{bucket}  Input: remove-bucket
+the bucket is delete
+DELETE /{bucket}  Input: remove-bucket-3
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-2
+S3Bucket [name=remove-bucket-2, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: remove-bucket-2 getUrl.py ../yovoleOss/READ.md private
+The object upload successful.
+
+HEAD /{bucket}/{object} Input: remove-bucket-2 getUrl.py
+The object length: 965  MD5: null
+
+DELETE /{bucket}/{object} Input: remove-bucket-2 getUrl.py
+DELETE /{bucket}  Input: remove-bucket-2
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-3
+S3Bucket [name=remove-bucket-3, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: remove-bucket-3 getUrl.py ../yovoleOss/READ.md public-read
+The object upload successful.
+
+GET /{bucket}/{object} Input: remove-bucket-3 getUrl.py /root/getUrl.py_1
+DELETE /{bucket}/{object} Input: remove-bucket-3 getUrl.py
+DELETE /{bucket}  Input: remove-bucket-3
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-3
+S3Bucket [name=remove-bucket-3, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: remove-bucket-3 getUrl.py ../yovoleOss/READ.md private
+The object upload successful.
+
+DELETE /{bucket}/{object} Input: remove-bucket-3 getUrl.py
+DELETE /{bucket}  Input: remove-bucket-3
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-2
+S3Bucket [name=remove-bucket-2, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: remove-bucket-2 getUrl.py ../yovoleOss/READ.md public-read-write
+The object upload successful.
+
+ GET /{bucket}/{object}?acl Input: remove-bucket-2 getUrl.py
+AccessControlList [owner=S3Owner [name=oss s3cmd user ,id=s3cmd-user], grants=[Grant [grantee=GroupGrantee [http://acs.amazonaws.com/groups/global/AllUsers], permission=READ], Grant [grantee=GroupGrantee [http://acs.amazonaws.com/groups/global/AllUsers], permission=WRITE], Grant [grantee=com.amazonaws.services.s3.model.CanonicalGrantee@a6112e9e, permission=FULL_CONTROL]]]
+
+DELETE /{bucket}/{object} Input: remove-bucket-2 getUrl.py
+DELETE /{bucket}  Input: remove-bucket-2
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-2
+S3Bucket [name=remove-bucket-2, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: remove-bucket-2 getUrl.py ../yovoleOss/READ.md private
+The object upload successful.
+
+PUT /{bucket}/{object}?acl Input: remove-bucket-2 getUrl.py public-read
+DELETE /{bucket}/{object} Input: remove-bucket-2 getUrl.py
+DELETE /{bucket}  Input: remove-bucket-2
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-2
+S3Bucket [name=remove-bucket-2, creationDate=null, owner=null]
+POST /{bucket}/{object}?uploads Input: remove-bucket-2 s3-50m
+PUT /{bucket}/{object}?partNumber=&uploadId= Input: remove-bucket-2 s3-50m 2~T7GxdxNge8P7hq-TqkE6za3ZEhC7csT
+POST /{bucket}/{object}?uploadId= 
+DELETE /{bucket}/{object} Input: remove-bucket-2 s3-50m
+DELETE /{bucket}  Input: remove-bucket-2
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-2
+S3Bucket [name=remove-bucket-2, creationDate=null, owner=null]
+create dir  Input: remove-bucket-2 files/
+
+
+DELETE /{bucket}/{object} Input: remove-bucket-2 files/
+DELETE /{bucket}  Input: remove-bucket-2
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-2
+S3Bucket [name=remove-bucket-2, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: remove-bucket-2 getUrl.py ../yovoleOss/READ.md public-read-write
+The object upload successful.
+
+get object header: remove-bucket-2/getUrl.py
+
+object size 965
+object size null
+DELETE /{bucket}/{object} Input: remove-bucket-2 getUrl.py
+DELETE /{bucket}  Input: remove-bucket-2
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-2
+S3Bucket [name=remove-bucket-2, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: remove-bucket-2 getUrl.py ../yovoleOss/READ.md public-read
+The object upload successful.
+
+reset object http header:remove-bucket-2 getUrl.py Cache-Control:no-cache/Content-Encoding:utf-8/Expires:3600
+
+copy successful
+
+DELETE /{bucket}/{object} Input: remove-bucket-2 getUrl.py
+DELETE /{bucket}  Input: remove-bucket-2
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-2
+S3Bucket [name=remove-bucket-2, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: remove-bucket-2 getUrl.py ../yovoleOss/READ.md private
+The object upload successful.
+
+Gener tmp shar url Input: remove-bucket-2 getUrl.py
+http://remove-bucket-2.cn-east-1.cloud-oss.com/getUrl.py?AWSAccessKeyId=4JXP0P9TY9LH8QO5E2J9&Expires=1510200305&Signature=sXpMj1QuWQMUxbdZYqs5IN7otwk%3D
+
+DELETE /{bucket}/{object} Input: remove-bucket-2 getUrl.py
+DELETE /{bucket}  Input: remove-bucket-2
+the bucket is delete
+PUT /{bucket} Input: remove-bucket-1
+S3Bucket [name=remove-bucket-1, creationDate=null, owner=null]
+PUT  /{bucket}?versioning Input: remove-bucket-1
+PUT /{bucket}/{object} Input: remove-bucket-1 getUrl.py ../yovoleOss/READ.md public-write
+The object upload successful.
+
+PUT /{bucket}/{object} Input: remove-bucket-1 getUrl.py ../yovoleOss/READ.md public-write
+The object upload successful.
+
+PUT /{bucket}/{object} Input: remove-bucket-1 getUrl.py ../yovoleOss/READ.md public-write
+The object upload successful.
+
+PUT /{bucket}/{object} Input: remove-bucket-1 getUrl.py ../yovoleOss/READ.md public-write
+The object upload successful.
+
+PUT /{bucket}/{object} Input: remove-bucket-1 getUrl.py ../yovoleOss/READ.md public-write
+The object upload successful.
+
+PUT /{bucket}/{object} Input: remove-bucket-1 getUrl.py ../yovoleOss/READ.md public-write
+The object upload successful.
+
+PUT /{bucket}/{object} Input: remove-bucket-1 getUrl.py ../yovoleOss/READ.md public-write
+The object upload successful.
+
+PUT /{bucket}/{object} Input: remove-bucket-1 getUrl.py ../yovoleOss/READ.md public-write
+The object upload successful.
+
+PUT /{bucket}/{object} Input: remove-bucket-1 getUrl.py ../yovoleOss/READ.md public-write
+The object upload successful.
+
+PUT /{bucket}/{object} Input: remove-bucket-1 getUrl.py ../yovoleOss/READ.md public-write
+The object upload successful.
+
+List versionID of any object in the bucket Input: remove-bucket-1
+getUrl.py versiodId: jzbsbtxgeRpBiAkpcGyJasjRggrWQq9
+getUrl.py versiodId: .7dC0uCdYhyrRwl8nxZL9G8hdu2-kGP
+getUrl.py versiodId: CKWAF9kiReig63elwX7N8XuDdaXE1H5
+getUrl.py versiodId: yE2wBOnWA8exhxvbDKu5TzwEAlzM8X6
+getUrl.py versiodId: YMsk2Szzl.SfYdx0pFidf1EJw.CZTmD
+getUrl.py versiodId: NfROy2Sf60H4X.-081QQUNO6cjaTeWa
+getUrl.py versiodId: Xn0peg9iAZ-TGYCl24Pg8feoSz43ITR
+getUrl.py versiodId: uKIooyAvuYpk-8SlWTJVgtuj7c1wqja
+getUrl.py versiodId: DWlpygYzoi4DlUosimV3FEFkF0QsHWG
+getUrl.py versiodId: V0VxX8Q1ybt4TPU2D9Vv8O.uXJm4zGa
+delete  object with a versionId Input: remove-bucket-1 getUrl.py jzbsbtxgeRpBiAkpcGyJasjRggrWQq9
+
+
+delete  object with a versionId Input: remove-bucket-1 getUrl.py .7dC0uCdYhyrRwl8nxZL9G8hdu2-kGP
+
+
+delete  object with a versionId Input: remove-bucket-1 getUrl.py CKWAF9kiReig63elwX7N8XuDdaXE1H5
+
+
+delete  object with a versionId Input: remove-bucket-1 getUrl.py yE2wBOnWA8exhxvbDKu5TzwEAlzM8X6
+
+
+delete  object with a versionId Input: remove-bucket-1 getUrl.py YMsk2Szzl.SfYdx0pFidf1EJw.CZTmD
+
+
+delete  object with a versionId Input: remove-bucket-1 getUrl.py NfROy2Sf60H4X.-081QQUNO6cjaTeWa
+
+
+delete  object with a versionId Input: remove-bucket-1 getUrl.py Xn0peg9iAZ-TGYCl24Pg8feoSz43ITR
+
+
+delete  object with a versionId Input: remove-bucket-1 getUrl.py uKIooyAvuYpk-8SlWTJVgtuj7c1wqja
+
+
+delete  object with a versionId Input: remove-bucket-1 getUrl.py DWlpygYzoi4DlUosimV3FEFkF0QsHWG
+
+
+delete  object with a versionId Input: remove-bucket-1 getUrl.py V0VxX8Q1ybt4TPU2D9Vv8O.uXJm4zGa
+
+
+PUT  /{bucket}?versioning Input: remove-bucket-1
+DELETE /{bucket}  Input: remove-bucket-1
+the bucket is delete
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"RHTDK7IU1O12Z08GJ3UJ","secret_key":"10qQ4uHw2SH10QVR2x7F0YYlYt5uKhST4zKSP4Mc"}],"swift_keys":[],"caps":[]}
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"9PP8FHFM6LQAB05R2XSD","secret_key":"yoMIBDgFp0gYn7Bhm8fZiFncZY7tye5LMYhGX4WX"}],"swift_keys":[],"caps":[]}
+
+GET /{admin}/user Input: test-admin
+200
+
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"9PP8FHFM6LQAB05R2XSD","secret_key":"yoMIBDgFp0gYn7Bhm8fZiFncZY7tye5LMYhGX4WX"}],"swift_keys":[],"caps":[]}
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"9PP8FHFM6LQAB05R2XSD","secret_key":"yoMIBDgFp0gYn7Bhm8fZiFncZY7tye5LMYhGX4WX"},{"user":"test-admin","access_key":"OF1L3W84J0C2C6OB1H9O","secret_key":"eZtWldKwdUxRoFzNQPBj74hCCKOIspbtJxoCbyAs"}],"swift_keys":[],"caps":[]}
+
+POST /{admin}/user Input: test-admin email:test-admin@qq.com
+200
+
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"test-admin@qq.com","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"9PP8FHFM6LQAB05R2XSD","secret_key":"yoMIBDgFp0gYn7Bhm8fZiFncZY7tye5LMYhGX4WX"},{"user":"test-admin","access_key":"OF1L3W84J0C2C6OB1H9O","secret_key":"eZtWldKwdUxRoFzNQPBj74hCCKOIspbtJxoCbyAs"}],"swift_keys":[],"caps":[]}
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"E8WXJ4JXQK4M50RX82CC","secret_key":"msJXvupZrbAON1zD1OjvSbPeAOU7sZpIozJgOydu"}],"swift_keys":[],"caps":[]}
+
+200
+
+Response Content is: [{"id":"test-admin:test-1","permissions":"full-control"}]
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"78O8N4X1IFFDR30L2HUI","secret_key":"MEDTAxecnxja8i2zORCu6TE53dQEsTrOsKM51IH2"}],"swift_keys":[],"caps":[]}
+
+200
+
+Response Content is: [{"id":"test-admin:test-1","permissions":"full-control"}]
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"5JQAO6GQI0AXS0QUTGIK","secret_key":"4eU4plFCkCNbjUHYN8P31D9ZsqrSFfKCALSq7Pba"}],"swift_keys":[],"caps":[]}
+
+200
+
+Response Content is: [{"id":"test-admin:test-1","permissions":"full-control"}]
+
+DELETE /{admin}/user Input: test-admin test-1
+200
+
+Response Content is: 
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"JEI4IPDNGP9C9E7U37A6","secret_key":"HgwdBZkAKgYBDNk7ssCX10UbMNUgdycNg0nsZN5E"}],"swift_keys":[],"caps":[]}
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{bucket} Input: test-bucket-1
+S3Bucket [name=test-bucket-1, creationDate=null, owner=null]
+GET /{admin}/bucket Input: test-bucket-1
+200
+
+Response Content is: {"bucket":"test-bucket-1","zonegroup":"69c94e23-51c6-47c8-afe0-a2c6e1ceef24","placement_rule":"default-placement","explicit_placement":{"data_pool":"","data_extra_pool":"","index_pool":""},"id":"1e5ef0f0-9ae9-4947-a893-707fd28c58ef.141379.69","marker":"1e5ef0f0-9ae9-4947-a893-707fd28c58ef.141379.69","index_type":"Normal","owner":"s3cmd-user","ver":"0#1,1#1,2#1,3#1,4#1,5#1,6#1,7#1,8#1,9#1","master_ver":"0#0,1#0,2#0,3#0,4#0,5#0,6#0,7#0,8#0,9#0","mtime":"2017-11-09 11:05:07.794166","max_marker":"0#,1#,2#,3#,4#,5#,6#,7#,8#,9#","usage":{},"bucket_quota":{"enabled":false,"check_on_raw":false,"max_size":-1,"max_size_kb":0,"max_objects":-1}}
+
+DELETE /{bucket}  Input: test-bucket-1
+the bucket is delete
+PUT /{bucket} Input: test-bucket-1
+S3Bucket [name=test-bucket-1, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: test-bucket-1 object ../yovoleOss/READ.md public-read-write
+The object upload successful.
+
+GET /{admin}/bucket?index Input: test-bucket-1
+200
+
+Response Content is: []
+
+DELETE /{bucket}/{object} Input: test-bucket-1 object
+DELETE /{bucket}  Input: test-bucket-1
+the bucket is delete
+PUT /{bucket} Input: test-bucket-1
+S3Bucket [name=test-bucket-1, creationDate=null, owner=null]
+POST /{admin}/bucket Input: test-bucket-1 s3cmd-user
+200
+
+Response Content is: 
+
+DELETE /{admin}/bucket Input: test-bucket-1
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"NIW0DI7ZLZ7ZNPT8IEB4","secret_key":"PXykvCMxminPhtlzFbf7d4tFBrbZ0lBTaD8wMjel"}],"swift_keys":[],"caps":[]}
+
+PUT /{bucket} Input: test-bucket-1
+S3Bucket [name=test-bucket-1, creationDate=null, owner=null]
+GET /{admin}/bucket Input: test-bucket-1
+200
+
+Response Content is: {"bucket":"test-bucket-1","zonegroup":"69c94e23-51c6-47c8-afe0-a2c6e1ceef24","placement_rule":"default-placement","explicit_placement":{"data_pool":"","data_extra_pool":"","index_pool":""},"id":"1e5ef0f0-9ae9-4947-a893-707fd28c58ef.141379.71","marker":"1e5ef0f0-9ae9-4947-a893-707fd28c58ef.141379.71","index_type":"Normal","owner":"s3cmd-user","ver":"0#1,1#1,2#1,3#1,4#1,5#1,6#1,7#1,8#1,9#1","master_ver":"0#0,1#0,2#0,3#0,4#0,5#0,6#0,7#0,8#0,9#0","mtime":"2017-11-09 11:05:08.770645","max_marker":"0#,1#,2#,3#,4#,5#,6#,7#,8#,9#","usage":{},"bucket_quota":{"enabled":false,"check_on_raw":false,"max_size":-1,"max_size_kb":0,"max_objects":-1}}
+
+PUT /{admin}/bucket Input: test-bucket-1 1e5ef0f0-9ae9-4947-a893-707fd28c58ef.141379.71 test-admin
+200
+
+Response Content is: 
+
+DELETE /{admin}/bucket Input: test-bucket-1
+200
+
+Response Content is: 
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{bucket} Input: test-bucket-1
+S3Bucket [name=test-bucket-1, creationDate=null, owner=null]
+DELETE /{admin}/bucket Input: test-bucket-1
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"866QU9BRBF9O7KOTCXQM","secret_key":"brvHBozuEAnYWpxHYywvldyRKsIreokrBUCJDrtn"}],"swift_keys":[],"caps":[]}
+
+PUT /{admin}/user?caps Input: test-admin usage=read
+200
+
+Response Content is: [{"type":"usage","perm":"read"}]
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"MBB2TFPF8H6AN0GW5G82","secret_key":"DCbbC3UTwAfbtuk3zpwT00tXGNKF2HOu9aEIFBmb"}],"swift_keys":[],"caps":[]}
+
+PUT /{admin}/user?caps Input: test-admin usage=read
+200
+
+Response Content is: [{"type":"usage","perm":"read"}]
+
+DELETE /{admin}/user?caps Input: test-admin usage=read
+200
+
+Response Content is: []
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"Z2IIZK3FYXDET2J4LDXW","secret_key":"h5FHbqdHCC6gVAVMipUHon33ZEFXL6JPeFZquit7"}],"swift_keys":[],"caps":[]}
+
+PUT /{admin}/user?key Input: test-admin
+200
+
+Response Content is: [{"user":"test-admin","access_key":"Z2IIZK3FYXDET2J4LDXW","secret_key":"h5FHbqdHCC6gVAVMipUHon33ZEFXL6JPeFZquit7"},{"user":"test-admin","access_key":"ZBBBHQQ5O738CXRFI8KZ","secret_key":"vaDwxhFwBhbqLIk0LhO0rWyaq3zaHafNql2TMLRS"}]
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"LBGUSY3H5WO7R0NUTBYE","secret_key":"HP7XcTHQUQ8osLmXCBqD5hfrqPqUDVPAqm1fkjOd"}],"swift_keys":[],"caps":[]}
+
+PUT /{admin}/user?key Input: test-admin 12313131safsfswerqwer asdfweqrqwer41421342134
+200
+
+Response Content is: [{"user":"test-admin","access_key":"12313131safsfswerqwer","secret_key":"asdfweqrqwer41421342134"},{"user":"test-admin","access_key":"LBGUSY3H5WO7R0NUTBYE","secret_key":"HP7XcTHQUQ8osLmXCBqD5hfrqPqUDVPAqm1fkjOd"}]
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"BE7Z4NGHXI9B5OFUHEWE","secret_key":"Iemy16VD1fq6x97rrU7amu0G9Tx7FMFpXE0ZdrmH"}],"swift_keys":[],"caps":[]}
+
+200
+
+Response Content is: [{"id":"test-admin:test-1","permissions":"full-control"}]
+
+PUT /{admin}/user?key Input: test-admin test-1 safsfswerqweasfasr asdfwerqwersfasdfwer
+200
+
+Response Content is: [{"user":"test-admin","access_key":"BE7Z4NGHXI9B5OFUHEWE","secret_key":"Iemy16VD1fq6x97rrU7amu0G9Tx7FMFpXE0ZdrmH"},{"user":"test-admin:test-1","access_key":"PSX5BP93CTTTV9ZMZG33","secret_key":"VZzOF3tfC2OKfmcjOBbwtRDEbhQpAS2vhTGYWu5w"},{"user":"test-admin:test-1","access_key":"safsfswerqweasfasr","secret_key":"asdfwerqwersfasdfwer"}]
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"15W9TXTGUVFW26V499F3","secret_key":"A8BZ06BPlP8Co0cqmQ2Ppa3jFf7NNxVz9ziMnfSl"}],"swift_keys":[],"caps":[]}
+
+200
+
+Response Content is: [{"id":"test-admin:test-1","permissions":"full-control"}]
+
+PUT /{admin}/user?key Input: test-admin test-1
+200
+
+Response Content is: [{"user":"test-admin","access_key":"15W9TXTGUVFW26V499F3","secret_key":"A8BZ06BPlP8Co0cqmQ2Ppa3jFf7NNxVz9ziMnfSl"},{"user":"test-admin:test-1","access_key":"1QS4C4OGD8FAXM2J6OXE","secret_key":"GbbV1JBLUYCIdce1G7VwaKSIRjiyKQWb9KhOj6Zk"},{"user":"test-admin:test-1","access_key":"B4VW2GKUM1O1IAF390XP","secret_key":"TJkARU1fuWI6bPtfwJEDVqJ8Iil7RN8vjPiOIy1J"}]
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"290EZU852ZE8425H6RRO","secret_key":"3pAqYBzwHZUAtJmfYQmjfFFRFYjiJwn0uUoDGBB1"}],"swift_keys":[],"caps":[]}
+
+PUT /{admin}/user?key Input: test-admin 12313131safsfswerqwer sadfwerqwerwqerqwsdfasdf
+200
+
+Response Content is: [{"user":"test-admin","access_key":"12313131safsfswerqwer","secret_key":"sadfwerqwerwqerqwsdfasdf"},{"user":"test-admin","access_key":"290EZU852ZE8425H6RRO","secret_key":"3pAqYBzwHZUAtJmfYQmjfFFRFYjiJwn0uUoDGBB1"}]
+
+DELETE /{admin}/user?key Input: 12313131safsfswerqwer
+200
+
+Response Content is: 
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"8Y6R4BSC3KRBAJ14F9MG","secret_key":"KWuaexiBh7NYNAO9A6JGBzPoh8ZpvzJT0BV8Jnqo"}],"swift_keys":[],"caps":[]}
+
+PUT /{admin}/user?key Input: test-admin 12313131safsfswerqwer asdfasfwerqwerwqerwer
+200
+
+Response Content is: [{"user":"test-admin","access_key":"12313131safsfswerqwer","secret_key":"asdfasfwerqwerwqerwer"},{"user":"test-admin","access_key":"8Y6R4BSC3KRBAJ14F9MG","secret_key":"KWuaexiBh7NYNAO9A6JGBzPoh8ZpvzJT0BV8Jnqo"}]
+
+DELETE /{admin}/user?key Input: 12313131safsfswerqwer test-admin
+200
+
+Response Content is: 
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{bucket} Input: test-bucket-1
+S3Bucket [name=test-bucket-1, creationDate=null, owner=null]
+PUT /{bucket}?acl Input: test-bucket-1 public-read
+GET /{admin}/bucket?policy Input: test-bucket-1
+200
+
+Response Content is: {"acl":{"acl_user_map":[{"user":"s3cmd-user","acl":15}],"acl_group_map":[{"group":1,"acl":1}],"grant_map":[{"id":"","grant":{"type":{"type":2},"id":"","email":"","permission":{"flags":1},"name":"","group":1,"url_spec":""}},{"id":"s3cmd-user","grant":{"type":{"type":0},"id":"s3cmd-user","email":"","permission":{"flags":15},"name":"oss s3cmd user ","group":0,"url_spec":""}}]},"owner":{"id":"s3cmd-user","display_name":"oss s3cmd user "}}
+
+DELETE /{bucket}  Input: test-bucket-1
+the bucket is delete
+PUT /{bucket} Input: test-bucket-1
+S3Bucket [name=test-bucket-1, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: test-bucket-1 getUrl.py ../yovoleOss/pom.xml public-read
+The object upload successful.
+
+GET /{admin}/bucket?policy Input: test-bucket-1 getUrl.py
+200
+
+Response Content is: {"acl":{"acl_user_map":[{"user":"s3cmd-user","acl":15}],"acl_group_map":[{"group":1,"acl":1}],"grant_map":[{"id":"","grant":{"type":{"type":2},"id":"","email":"","permission":{"flags":1},"name":"","group":1,"url_spec":""}},{"id":"s3cmd-user","grant":{"type":{"type":0},"id":"s3cmd-user","email":"","permission":{"flags":15},"name":"oss s3cmd user ","group":0,"url_spec":""}}]},"owner":{"id":"s3cmd-user","display_name":"oss s3cmd user "}}
+
+DELETE /{bucket}/{object} Input: test-bucket-1 getUrl.py
+DELETE /{bucket}  Input: test-bucket-1
+the bucket is delete
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"XKK70NV2WDE8H6D10MI4","secret_key":"OnRQn8J3PuzB9bHlxlANlvmYsbCsJtmUkQr0tF2s"}],"swift_keys":[],"caps":[]}
+
+GET /admin/user?quota&uid=<uid>&quota-type=user Input: test-admin
+200
+
+Response Content is: {"enabled":false,"check_on_raw":false,"max_size":-1,"max_size_kb":0,"max_objects":-1}
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"L4IIRCW30PC55BEH5JJH","secret_key":"wsH9gvEszeJLvV0ER1D7KqDI72CWBDd9yGo5Rgtw"}],"swift_keys":[],"caps":[]}
+
+PUT /admin/user?quota&uid=<uid>&quota-type=user Input: test-admin 100 100 true
+200
+
+Response Content is: 
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"C8WFZ80L0V1A6H6WU5DP","secret_key":"vQBE2zMaZDsEcayiLwLCl92hiegIxbipi8gGRnDp"}],"swift_keys":[],"caps":[]}
+
+GET /admin/user?quota&uid=<uid>&quota-type=bucket Input: test-admin
+200
+
+Response Content is: {"enabled":false,"check_on_raw":false,"max_size":-1,"max_size_kb":0,"max_objects":-1}
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+PUT /{bucket} Input: test-bucket-1
+S3Bucket [name=test-bucket-1, creationDate=null, owner=null]
+PUT /{bucket}/{object} Input: test-bucket-1 test-file ../yovoleOss/READ.md private
+The object upload successful.
+
+DELETE /{admin}/bucket?object Input: test-bucket-1 test-file
+200
+
+Response Content is: 
+
+DELETE /{admin}/bucket Input: test-bucket-1
+200
+
+Response Content is: 
+
+GET /{admin}/usage 
+200
+
+Response Content is: {"entries":[{"user":"s3cmd-user","buckets":[{"bucket":"","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"list_buckets","bytes_sent":319,"bytes_received":0,"ops":1,"successful_ops":1}]},{"bucket":"-","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"stat_bucket","bytes_sent":0,"bytes_received":0,"ops":22,"successful_ops":0}]},{"bucket":"remove-bucket","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"copy_obj","bytes_sent":183,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"get_obj","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":2208,"ops":1,"successful_ops":1}]},{"bucket":"remove-bucket-1","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":4,"successful_ops":4},{"category":"list_bucket","bytes_sent":3896,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":3860,"ops":4,"successful_ops":4},{"category":"set_bucket_versioning","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2}]},{"bucket":"remove-bucket-2","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"complete_multipart","bytes_sent":232,"bytes_received":0,"ops":1,"successful_ops":0},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":8,"successful_ops":8},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":6,"successful_ops":6},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":6,"successful_ops":6},{"category":"get_acls","bytes_sent":840,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"get_obj","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"init_multipart","bytes_sent":252,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_acls","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":44045017,"ops":16,"successful_ops":16}]},{"bucket":"remove-bucket-3","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"get_obj","bytes_sent":965,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":2895,"ops":3,"successful_ops":3}]},{"bucket":"test-bucket-2","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"s3cmd-user","categories":[{"category":"abort_multipart","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":10,"successful_ops":10},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":10,"successful_ops":10},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":20,"successful_ops":20},{"category":"get_acls","bytes_sent":455,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"get_bucket_location","bytes_sent":133,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"init_multipart","bytes_sent":252,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"list_bucket","bytes_sent":6082,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"list_bucket_multiparts","bytes_sent":681,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_acls","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_obj","bytes_sent":0,"bytes_received":31730,"ops":20,"successful_ops":20},{"category":"set_bucket_versioning","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2}]}]},{"user":"test-2","buckets":[{"bucket":"az-bucket-4","time":"2017-11-09 03:00:00.000000Z","epoch":1510196400,"owner":"test-2","categories":[{"category":"put_obj","bytes_sent":0,"bytes_received":257949696,"ops":123,"successful_ops":123}]}]}],"summary":[{"user":"s3cmd-user","categories":[{"category":"abort_multipart","bytes_sent":0,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"complete_multipart","bytes_sent":232,"bytes_received":0,"ops":1,"successful_ops":0},{"category":"copy_obj","bytes_sent":183,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"create_bucket","bytes_sent":0,"bytes_received":0,"ops":25,"successful_ops":25},{"category":"delete_bucket","bytes_sent":0,"bytes_received":0,"ops":22,"successful_ops":22},{"category":"delete_obj","bytes_sent":0,"bytes_received":0,"ops":35,"successful_ops":35},{"category":"get_acls","bytes_sent":1295,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"get_bucket_location","bytes_sent":133,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"get_obj","bytes_sent":965,"bytes_received":0,"ops":4,"successful_ops":4},{"category":"init_multipart","bytes_sent":504,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"list_bucket","bytes_sent":9978,"bytes_received":0,"ops":3,"successful_ops":3},{"category":"list_bucket_multiparts","bytes_sent":681,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"list_buckets","bytes_sent":319,"bytes_received":0,"ops":1,"successful_ops":1},{"category":"put_acls","bytes_sent":0,"bytes_received":0,"ops":2,"successful_ops":2},{"category":"put_obj","bytes_sent":0,"bytes_received":44085710,"ops":44,"successful_ops":44},{"category":"set_bucket_versioning","bytes_sent":0,"bytes_received":0,"ops":4,"successful_ops":4},{"category":"stat_bucket","bytes_sent":0,"bytes_received":0,"ops":22,"successful_ops":0}],"total":{"bytes_sent":14290,"bytes_received":44085710,"ops":171,"successful_ops":148}},{"user":"test-2","categories":[{"category":"put_obj","bytes_sent":0,"bytes_received":257949696,"ops":123,"successful_ops":123}],"total":{"bytes_sent":0,"bytes_received":257949696,"ops":123,"successful_ops":123}}]}
+
+PUT /{admin}/user Input: test-admin a test user max-buckets:100
+200
+Response Content is: {"tenant":"","user_id":"test-admin","display_name":"a test user","email":"","suspended":0,"max_buckets":100,"subusers":[],"keys":[{"user":"test-admin","access_key":"WZ90KWAB0PECTQM8R8HA","secret_key":"uzOHMpn0Vj0aoOOr1ZA4Hn7jX4wH1LTEWPsswUrH"}],"swift_keys":[],"caps":[]}
+
+PUT /admin/user?quota&uid=<uid>&quota-type=bucket Input: test-admin 100 100 true
+200
+
+Response Content is: 
+
+DELETE /{admin}/user Input: test-admin
+200
+
+Response Content is: 
+
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.411 sec
+
+Results :
+
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-jar-plugin:2.4:jar[m [1m(default-jar)[m @ [36myovoleOss[0;1m ---[m
+[[1;34mINFO[m] Building jar: /root/yovoleOss/target/yovoleOss-0.1.jar
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-shade-plugin:1.4:shade[m [1m(default)[m @ [36myovoleOss[0;1m ---[m
+[[1;34mINFO[m] Including com.googlecode.json-simple:json-simple:jar:1.1.1 in the shaded jar.
+[[1;34mINFO[m] Including com.amazonaws:aws-java-sdk-core:jar:1.11.172 in the shaded jar.
+[[1;34mINFO[m] Including commons-logging:commons-logging:jar:1.1.3 in the shaded jar.
+[[1;34mINFO[m] Including org.apache.httpcomponents:httpclient:jar:4.5.2 in the shaded jar.
+[[1;34mINFO[m] Including org.apache.httpcomponents:httpcore:jar:4.4.4 in the shaded jar.
+[[1;34mINFO[m] Including commons-codec:commons-codec:jar:1.9 in the shaded jar.
+[[1;34mINFO[m] Including software.amazon.ion:ion-java:jar:1.0.2 in the shaded jar.
+[[1;34mINFO[m] Including com.fasterxml.jackson.core:jackson-databind:jar:2.6.7.1 in the shaded jar.
+[[1;34mINFO[m] Including com.fasterxml.jackson.core:jackson-annotations:jar:2.6.0 in the shaded jar.
+[[1;34mINFO[m] Including com.fasterxml.jackson.core:jackson-core:jar:2.6.7 in the shaded jar.
+[[1;34mINFO[m] Including com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:jar:2.6.7 in the shaded jar.
+[[1;34mINFO[m] Including joda-time:joda-time:jar:2.8.1 in the shaded jar.
+[[1;34mINFO[m] Including com.amazonaws:aws-java-sdk-s3:jar:1.11.172 in the shaded jar.
+[[1;34mINFO[m] Including com.amazonaws:aws-java-sdk-kms:jar:1.11.172 in the shaded jar.
+[[1;34mINFO[m] Including com.amazonaws:jmespath-java:jar:1.11.172 in the shaded jar.
+[[1;34mINFO[m] Replacing original artifact with shaded artifact.
+[[1;34mINFO[m] Replacing /root/yovoleOss/target/yovoleOss-0.1.jar with /root/yovoleOss/target/yovoleOss-0.1-shaded.jar
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 24.630 s
+[[1;34mINFO[m] Finished at: 2017-11-09T11:05:14+08:00
+[[1;34mINFO[m] Final Memory: 19M/216M
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

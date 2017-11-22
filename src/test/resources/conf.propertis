@@ -1,0 +1,8 @@
+admin_access_key=UJFDFWO048U1MXI5YWAY
+admin_secret_key=PqaKxum5JpfhfrTlvftyOqc4fOotS5b2Ml1LUndT
+
+user_access_key=SZXXH793I334EXP2P5IZ
+user_secret_key=NZ7A7ldHAiG4sdUcnAzrgBy8M4bLJfG4STYfPhvx
+end_point=cn-east-1-internal.cloud-oss.com
+http_type=https
+#end_point= 172.16.1.23:7480

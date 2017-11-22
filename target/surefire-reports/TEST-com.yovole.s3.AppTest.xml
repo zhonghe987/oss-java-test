@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="60" failures="0" name="com.yovole.s3.AppTest" time="156.448" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.141-b16"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/root/yovoleOss"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/root/yovoleOss"/>
+    <property name="java.runtime.version" value="1.8.0_141-b16"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/local/apache-maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/local/apache-maven/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.10.0-514.26.2.el7.x86_64"/>
+    <property name="library.jansi.path" value="/usr/local/apache-maven/lib/jansi-native/linux64"/>
+    <property name="user.home" value="/root"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="root"/>
+    <property name="java.class.path" value="/usr/local/apache-maven/boot/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_141"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre/lib/resources.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre/lib/rt.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre/lib/jsse.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre/lib/jce.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre/lib/charsets.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre/lib/jfr.jar:/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.141-1.b16.el7_3.x86_64/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/local/apache-maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.yovole.s3.AppTest" name="test_on" time="0.605"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_user_createUser" time="0.33"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_user_getUserInfo" time="0.075"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_user_modifyUser" time="0.156"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_subuser_createSubUser" time="0.18"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_subuser_modifySubUser" time="0.167"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_subuser_removeSubUser" time="0.181"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_quota_setBucketQuota" time="0.115"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_removeObject" time="0.347"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_usage_getAllUsage" time="0.056"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_usage_getUsageWithUid" time="0.024"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_usage_getUsageWithDate" time="0.047"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_usage_removeUsageWithDate" time="0.151"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_usage_removeUsageWithUid" time="0.037"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_usage_removeAllUsage" time="0.201"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_getAllBucket" time="0.119"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_createBucket" time="0.112"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_createBucketWithAcl" time="0.096"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_getBucketObjectsWithNum" time="0.458"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_getBucketObjectsWithPrefix" time="0.386"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_getLocation" time="0.1"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_getBucketAcl" time="0.107"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_setBucketAcl" time="0.124"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_getBucketUploads" time="7.549"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_enableBucketVersion" time="0.132"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_unableBucketVersion" time="0.111"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_buckets_removeBucket" time="0.102"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_checkObject" time="0.148"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_uploadObject" time="0.164"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_copyObject" time="0.278"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_getObjectInfo" time="0.122"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_getObject" time="0.149"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_removeObjects" time="0.122"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_getObjectAcl" time="0.131"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_setObjectAcl" time="0.131"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_uploadBigObject" time="138.949"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_createDir" time="0.14"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_getObjectMeta" time="0.126"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_resetObjectHeader" time="0.155"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_genTmpUrl" time="0.124"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_object_listObjectVersion" time="0.836"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_user_removeUser" time="0.109"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_getBucketInfo" time="0.132"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_checkBucketIndex" time="0.149"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_unlinkBucket" time="0.151"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_linkBucket" time="0.355"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_bucket_removeBucket" time="0.108"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_caps_addUserCaps" time="0.114"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_caps_removeUserCaps" time="0.15"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_key_createKey" time="0.131"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_key_createKeySpeci" time="0.177"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_key_createKeySubSpeci" time="0.175"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_key_createKeySub" time="0.178"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_key_removeKey" time="0.154"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_key_removeKeyWithUid" time="0.147"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_policy_getBucketPolicy" time="0.124"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_policy_getObjectPolicy" time="0.147"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_quota_getUserQuota" time="0.089"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_quota_setUserQuota" time="0.113"/>
+  <testcase classname="com.yovole.s3.AppTest" name="test_quota_getBucketQuota" time="0.102"/>
+</testsuite>
